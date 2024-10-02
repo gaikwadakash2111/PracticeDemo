@@ -10,12 +10,8 @@ public class A {
 	@Test
 	public void m1() throws InterruptedException {
 		
-		 ChromeOptions options = new ChromeOptions();
-	        options.addArguments("--headless"); // Ensure GUI-free execution
-	        options.addArguments("--no-sandbox"); 
-	        options.addArguments("--disable-dev-shm-usage");
-
-	        WebDriver driver = new ChromeDriver(options);
+	
+	        WebDriver driver = new ChromeDriver();
 
 	        driver.get("https://login.salesforce.com/?locale=in");
 
